@@ -45,6 +45,14 @@ MediaStreamTrack：
 
 ## media streams -> webrtc
 
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/media_stream_video_webrtc_sink.h?type=cs&sq=package:chromium&l=30
+
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/webrtc_media_stream_track_adapter.cc?type=cs&sq=package:chromium&l=16
+
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/webrtc_media_stream_track_adapter_map.cc?type=cs&sq=package:chromium&l=99
+
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/webrtc_media_stream_adapter.cc?type=cs&sq=package:chromium&l=121
+
 https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/webrtc_media_stream_adapter.h?type=cs&sq=package:chromium&l=35
 
 https://cs.chromium.org/chromium/src/content/renderer/media/rtc_peer_connection_handler.h?type=cs&sq=package:chromium&l=144
