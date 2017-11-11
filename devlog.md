@@ -25,7 +25,7 @@ MediaStream 的双向的使用姿势：
 MediaStream 里面有多个 [MediaStreamTrack](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack)。
 
 MediaStreamTrack：
-- webrtc/pc/mediatrack.h
-- content/renderer/media/media_stream_track.h
-- Webkit/Source/modules/mediastream/MediaStreamTrack.h
+- [webrtc/pc/mediastreamtrack.h](https://cs.chromium.org/chromium/src/third_party/webrtc/pc/mediastreamtrack.h?type=cs&q=webrtc/pc/medi&sq=package:chromium&l=1)
+- [content/renderer/media/media_stream_track.h](https://cs.chromium.org/chromium/src/content/renderer/media/media_stream_track.h?q=+content/renderer/media/media_stream_track.h&sq=package:chromium&dr)
+- [Webkit/Source/modules/mediastream/MediaStreamTrack.h](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/mediastream/MediaStreamTrack.h?type=cs&q=Webkit/Source/modules/mediastream/MediaStreamTrack.h&sq=package:chromium&l=1)
   - modules 目录下的都是一些 js/v8 层的接口（IDL）
