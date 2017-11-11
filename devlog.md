@@ -6,7 +6,6 @@ Proxifier 里面把全局的流量都导向这个 SOCKS5 代理，同时要打�
 
 # 分析
 
-## 获取窗口的 MediaStream
 extension 里面有 tabCapture 的功能。
 
 https://cs.chromium.org/chromium/src/chrome/browser/extensions/api/tab_capture/tab_capture_api.h?q=tabCapture&sq=package:chromium&dr=CSs&l=25
@@ -43,7 +42,9 @@ MediaStreamTrack：
 
   - modules 目录下的都是一些 js/v8 层的接口（IDL）
 
-## media streams -> webrtc
+## blink::WebMediaStream -> WebRTC 内部的过程
+
+https://cs.chromium.org/chromium/src/content/renderer/media/media_stream_video_track.cc?type=cs&sq=package:chromium&l=310
 
 https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/media_stream_video_webrtc_sink.cc?type=cs&sq=package:chromium&l=260
 
