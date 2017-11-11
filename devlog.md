@@ -1,8 +1,3 @@
-# CBS
-基于 Chromium 的类似 OBS 的推流软件。需要实现的有：
-- 用 ffmpeg 编码 MediaStream 并推出去（目前 Chromium 基于的是）
-- 实现 OBS 的游戏窗口捕获
-
 src/third_party/webrtc/pc/mediastreamtrack.h
 https://cs.chromium.org/chromium/src/third_party/webrtc/pc/mediastreamtrack.h?q=MediaStreamTrack&sq=package:chromium&dr=CSs&l=28
 
