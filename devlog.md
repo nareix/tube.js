@@ -20,5 +20,6 @@ https://cs.chromium.org/chromium/src/chrome/browser/extensions/api/tab_capture/t
 
 MediaStreamTrack：
 - webrtc/pc/mediatrack.h
-- Webkit/Source/modules/mediastream/MediaStreamTrack.h
 - content/renderer/media/media_stream_track.h
+- Webkit/Source/modules/mediastream/MediaStreamTrack.h
+ - modules 目录下的都是一些 js/v8 层的接口（IDL）
