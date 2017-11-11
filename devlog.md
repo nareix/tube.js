@@ -45,3 +45,9 @@ MediaStreamTrack：
 - [Webkit/Source/modules/mediastream/MediaStreamTrack.h](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/mediastream/MediaStreamTrack.h?type=cs&q=Webkit/Source/modules/mediastream/MediaStreamTrack.h&sq=package:chromium&l=1)
 
   - modules 目录下的都是一些 js/v8 层的接口（IDL）
+
+## 两者相连
+
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/media_stream_video_webrtc_sink.h?type=cs&sq=package:chromium
+
+
