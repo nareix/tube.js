@@ -25,14 +25,23 @@ MediaStream 的双向的使用姿势：
 MediaStream 里面有多个 [MediaStreamTrack](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack)。
 
 MediaStreamTrack：
+
 - [webrtc/pc/mediastreamtrack.h](https://cs.chromium.org/chromium/src/third_party/webrtc/pc/mediastreamtrack.h?type=cs&q=webrtc/pc/medi&sq=package:chromium&l=1)
-  - MediaTrack implements the interface common to AudioTrackInterface and VideoTrackInterface.
+
+  - MediaTrack<T> 这个类是模板类，用来套 AudioTrackInterface/VideoTrackInterface
 
 - [webrtc/api/mediastreaminterface.h](https://cs.chromium.org/chromium/src/third_party/webrtc/api/mediastreaminterface.h?type=cs&q=VideoTrackInterface&sq=package:chromium&l=158)
-  - 包含对 AudioTrackInterface/VideoTrackInterface 这两个 class 可以获取 VideoFrame
+
+  - 包含对 AudioTrackInterface/VideoTrackInterface 这两个 class 可以获取 VideoFrame
+  
+- [webrtc/pc/videotrack.h](https://cs.chromium.org/chromium/src/third_party/webrtc/pc/videotrack.h?type=cs&sq=package:chromium)
+
+  - VideoTrack 继承了 MediaStreamTrack<VideoTrackInterface>
 
 - [content/renderer/media/media_stream_track.h](https://cs.chromium.org/chromium/src/content/renderer/media/media_stream_track.h?q=+content/renderer/media/media_stream_track.h&sq=package:chromium&dr)
+
   - MediaStreamTrack is a Chrome representation of blink::WebMediaStreamTrack. It is owned by blink::WebMediaStreamTrack as blink::WebMediaStreamTrack::ExtraData.
 
 - [Webkit/Source/modules/mediastream/MediaStreamTrack.h](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/mediastream/MediaStreamTrack.h?type=cs&q=Webkit/Source/modules/mediastream/MediaStreamTrack.h&sq=package:chromium&l=1)
+
   - modules 目录下的都是一些 js/v8 层的接口（IDL）
