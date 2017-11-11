@@ -16,7 +16,13 @@ https://cs.chromium.org/chromium/src/chrome/browser/extensions/api/tab_capture/t
 中被识别。
 
 
-## 从 MediaTrack 到获取 VideoFrame 的过程
+## 从 MediaStreamTrack 到获取 VideoFrame 的过程
+
+MediaStream 的双向的使用姿势：
+  - 可以把 MediaStream 交给 video 标签播放
+  - 也可以把 video 标签或者其他 capture 来源变成一个 MediaStream
+
+MediaStream 里面有多个 [MediaStreamTrack](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack)。
 
 MediaStreamTrack：
 - webrtc/pc/mediatrack.h
