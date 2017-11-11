@@ -26,9 +26,10 @@ MediaStream 里面有多个 [MediaStreamTrack](https://developer.mozilla.org/en-
 
 MediaStreamTrack：
 - [webrtc/pc/mediastreamtrack.h](https://cs.chromium.org/chromium/src/third_party/webrtc/pc/mediastreamtrack.h?type=cs&q=webrtc/pc/medi&sq=package:chromium&l=1)
+  - MediaTrack implements the interface common to AudioTrackInterface and VideoTrackInterface.
 
-- [webrtc/api/mediastreaminterface.h](https://cs.chromium.org/chromium/src/third_party/webrtc/api/mediastreaminterface.h?type=cs&sq=package:chromium&l=82)
-  - 包含对 MediaStreamTrack 的直接实现（可以获取 VideoFrame）
+- [webrtc/api/mediastreaminterface.h](https://cs.chromium.org/chromium/src/third_party/webrtc/api/mediastreaminterface.h?type=cs&q=VideoTrackInterface&sq=package:chromium&l=158)
+  - 包含对 AudioTrackInterface/VideoTrackInterface 这两个 class 可以获取 VideoFrame
 
 - [content/renderer/media/media_stream_track.h](https://cs.chromium.org/chromium/src/content/renderer/media/media_stream_track.h?q=+content/renderer/media/media_stream_track.h&sq=package:chromium&dr)
   - MediaStreamTrack is a Chrome representation of blink::WebMediaStreamTrack. It is owned by blink::WebMediaStreamTrack as blink::WebMediaStreamTrack::ExtraData.
