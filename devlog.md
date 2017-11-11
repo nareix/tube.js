@@ -46,8 +46,7 @@ MediaStreamTrack：
 
   - modules 目录下的都是一些 js/v8 层的接口（IDL）
 
-## 两者相连
+## media streams -> webrtc
 
-https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/media_stream_video_webrtc_sink.h?type=cs&sq=package:chromium
-
+https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/webrtc_media_stream_adapter.h?type=cs&sq=package:chromium&l=35
 
