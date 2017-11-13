@@ -44,6 +44,8 @@ MediaStreamTrack：
 
 ## blink::WebMediaStream -> WebRTC 内部的过程
 
+https://cs.chromium.org/chromium/src/media/capture/video_capturer_source.h?type=cs&sq=package:chromium&l=44
+
 https://cs.chromium.org/chromium/src/content/renderer/media/media_stream_video_track.cc?type=cs&sq=package:chromium&l=310
 
 https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/media_stream_video_webrtc_sink.cc?type=cs&sq=package:chromium&l=260
