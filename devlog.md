@@ -4,7 +4,13 @@ Proxifier 里面把全局的流量都导向这个 SOCKS5 代理，同时要打�
 
 中途也会遇到红色的字提示某个脚本没有数字签名，在 cmd.exe 中键入 `powershell` 打开 Powershell，然后输入 `Unblock-File -Path 某个脚本` 即可。
 
-# 分析
+# Capture 模块
+
+需要很清楚的了解 <video> 的内部实现，然后按照它的数据流程来套用 OBS 的 capture 模块。
+
+## <video> 组件分析
+
+# 推流模块
 
 extension 里面有 tabCapture 的功能。
 
