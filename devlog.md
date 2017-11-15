@@ -8,6 +8,9 @@ Proxifier 里面把全局的流量都导向这个 SOCKS5 代理，同时要打�
 
 [Blink 扩展 IDL](https://chromium.googlesource.com/chromium/src/+/50.0.2661.2/third_party/WebKit/Source/bindings/idl-extended-attributes.md#RaisesException_i_m_a)
 
+- RuntimeEnabled 只在 feature 启用的时候有效
+- sequence<XXX> 数组，翻译后是 HeapVector<Member<XXX>> 
+
 # Capture 模块
 
 需要很清楚的了解 <video> 的内部实现，然后按照它的数据流程来套用 OBS 的 capture 模块。
