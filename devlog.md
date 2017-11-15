@@ -80,3 +80,14 @@ https://cs.chromium.org/chromium/src/content/renderer/media/webrtc/peer_connecti
 https://cs.chromium.org/chromium/src/content/renderer/renderer_blink_platform_impl.cc?type=cs&sq=package:chromium&l=903
 
 https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/peerconnection/RTCPeerConnection.cpp?type=cs&sq=package:chromium&l=511
+
+## RTCPeerConnectionHandler 和 IDL 里面的 RTCPeerConnection 如何实现了映射？
+
+```
+// RTCPeerConnectionHandler is a delegate for the RTC PeerConnection API
+// messages going between WebKit and native PeerConnection in libjingle. It's
+// owned by WebKit.
+// WebKit calls all of these methods on the main render thread.
+// Callbacks to the webrtc::PeerConnectionObserver implementation also occur on
+// the main render thread.
+```
