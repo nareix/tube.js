@@ -83,4 +83,4 @@ https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/peerconne
 
 ## RTCPeerConnectionHandler 和 IDL 里面的 RTCPeerConnection 如何实现了映射？
 
-RTCPeerConnectionHandler 是 handle RTCPeerConnection 的操作。
+RTCPeerConnectionHandler 是 handle RTCPeerConnection 的操作。RTCPeerConnection 中调用 AddStream，则会调用 RTCPeerConnectionHandler 中的 ddStream。参数是 MediaStream::Descriptor()。
