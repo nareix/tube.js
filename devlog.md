@@ -87,4 +87,4 @@ RTCPeerConnectionHandler 是 handle RTCPeerConnection 的操作。RTCPeerConnect
 
 WebIDL 的 MediaStream 的 Descriptor() 方法可以取出 WebMediaStream。从 WebMediaStream 里面可以取出 WebMediaStreamTrack。
 
- MediaStreamVideoWebRtcSink 的构造函数使用 WebMediaStreamTrack 作为参数传入。
+ MediaStreamVideoWebRtcSink 的构造函数使用 WebMediaStreamTrack 作为参数传入。MediaStreamVideoWebRtcSink 做了两件事情：启动了一个 timer 定时去 request frame，注册了 on frame 回调。
