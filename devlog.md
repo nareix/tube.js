@@ -8,6 +8,12 @@ Proxifier 里面把全局的流量都导向这个 SOCKS5 代理，同时要打�
 
 [Blink 扩展 IDL](https://chromium.googlesource.com/chromium/src/+/50.0.2661.2/third_party/WebKit/Source/bindings/idl-extended-attributes.md#RaisesException_i_m_a)
 
+- Chromium 的 C++ 使用姿势
+   - https://chromium.googlesource.com/chromium/src/+/master/styleguide/c++/c++.md
+   - https://www.chromium.org/developers/smart-pointer-guidelines
+   - https://chromium.googlesource.com/chromium/src/+/lkcr/docs/threading_and_tasks.md
+   - https://chromium.googlesource.com/chromium/src/+/lkgr/docs/callback.md
+
 - RuntimeEnabled 只在 feature 启用的时候有效
 - sequence<XXX> 数组，翻译后是 HeapVector<Member<XXX>> 
 
