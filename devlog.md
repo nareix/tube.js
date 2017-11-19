@@ -91,7 +91,11 @@ https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/peerconne
 
 RTCPeerConnectionHandler 是 handle RTCPeerConnection 的操作。RTCPeerConnection 中调用 AddStream，则会调用 RTCPeerConnectionHandler 中的 addStream。
 
-WebIDL 的 MediaStream 的 Descriptor() 方法可以取出 WebMediaStream。从 WebMediaStream 里面可以取出 WebMediaStreamTrack。
+WebIDL 的 MediaStream 的 Descriptor() 方法可以取出 WebMediaStream。
+
+WebIDL 的 MediaStreamTrack 的 Component() 方法可以取出 WebMediaStreamTrack。见[这里](https://cs.chromium.org/chromium/src/third_party/WebKit/Source/modules/exported/WebDOMMediaStreamTrack.cpp?q=+MediaStreamTrack&sq=package:chromium&dr=CSs&l=58)。
+
+从 WebMediaStream 里面可以取出 WebMediaStreamTrack。
 
  MediaStreamVideoWebRtcSink 的构造函数使用 WebMediaStreamTrack 作为参数传入。MediaStreamVideoWebRtcSink 做了两件事情：启动了一个 timer 定时去 request frame，注册了 on frame 回调。
  
