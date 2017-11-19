@@ -103,3 +103,4 @@ WebIDL 的 MediaStreamTrack 的 Component() 方法可以取出 WebMediaStreamTra
  看上去是实现了从 WebMediaStreamTrack 到编码输出 rtp 的过程。
 
 - https://cs.chromium.org/chromium/src/chrome/common/extensions/api/cast_streaming_session.idl?q=cast_streaming_session&sq=package:chromium&dr
+- https://cs.chromium.org/chromium/src/chrome/renderer/extensions/cast_streaming_native_handler.cc?type=cs&q=CastRtpStream&sq=package:chromium&l=370
