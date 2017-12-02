@@ -18,6 +18,8 @@ Proxifier 里面把全局的流量都导向这个 SOCKS5 代理，同时要打�
 
 - RuntimeEnabled 只在 feature 启用的时候有效
 - sequence<XXX> 数组，翻译后是 HeapVector<Member<XXX>> 
+   
+[ContentModule](https://www.chromium.org/developers/content-module)
 
 # Capture 模块
 
